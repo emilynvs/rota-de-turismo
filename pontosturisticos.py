@@ -1,7 +1,5 @@
 import heapq
 import sys
-# heappush: Adiciona um elemento à fila com sua prioridade associada.
-# heappop: Remove e retorna o elemento com a prioridade mais alta (o elemento com o menor valor).
 
 def dijkstra(pontos, inicio, fim):
     distancias = {no: sys.maxsize for no in pontos}
@@ -58,7 +56,6 @@ pontos = {
     'piscinas naturais de picãozinho': [('praia de tambaú', 0.11)],
     'jardim botânico': [('mercado de artesanato paraibano', 7.9), ('praia de tambaú', 6.4), ('parque sólon de lucena', 3.2)],
     'parque sólon de lucena': [ ('jardim botânico',3.2)],   
-    # 'centro cultura de São Francisco': [('parque sólon de lucena', 2), ('jardim botânico', 4.9), ('praia de tambaú', 7.9), ('piscinas naturais de picãozinho', 7.8)],
 }
 
 while True:
